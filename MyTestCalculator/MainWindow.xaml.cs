@@ -15,14 +15,18 @@ using System.Windows.Shapes;
 
 namespace MyTestCalculator
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button0_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            TextBoxOutput.Text += (string)button.Content;
         }
     }
 }
