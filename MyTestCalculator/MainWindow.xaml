@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MyTestCalculator"
         mc:Ignorable="d" 
         Title="My Test Calculator" Height="500" Width="320" Topmost="True" WindowStyle="ToolWindow" ResizeMode="NoResize" Background="#FFCA1AF3" Foreground="White">
-    <Grid>
+    <Grid Name="GroupElements">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
@@ -30,10 +30,9 @@
                  SelectionTextBrush="#FFCDE2FF" 
                  Cursor="Hand"
                  IsReadOnly="True" 
-                 Text="0" 
                  FontSize="48" 
                  AutomationProperties.IsRequiredForForm="True" 
-                 IsUndoEnabled="False"/>
+                 IsUndoEnabled="False" MaxLines="1" MaxLength="11"/>
         <Button x:Name="Button1"
                 Grid.Column="0" 
                 Grid.Row="3" 
@@ -41,7 +40,7 @@
                 Background="#FFFF09A7" 
                 Foreground="White" 
                 BorderBrush="#FFFFA400" 
-                Margin="2,2,2,2" FontSize="36" Click="Button0_Click"/>
+                Margin="2,2,2,2" FontSize="36"/>
         <Button x:Name="Button2"
                 Grid.Column="1" 
                 Grid.Row="3" 
@@ -49,7 +48,7 @@
                 Background="#FFFF09A7" 
                 Foreground="White" 
                 BorderBrush="#FFFFA400" 
-                Margin="2,2,2,2" FontSize="36" Click="Button0_Click"/>
+                Margin="2,2,2,2" FontSize="36"/>
         <Button x:Name="Button3"
                 Grid.Column="2" 
                 Grid.Row="3" 
@@ -57,7 +56,7 @@
                 Background="#FFFF09A7" 
                 Foreground="White" 
                 BorderBrush="#FFFFA400" 
-                Margin="2,2,2,2" FontSize="36" Click="Button0_Click"/>
+                Margin="2,2,2,2" FontSize="36"/>
         <Button x:Name="Button4"
                 Grid.Column="0" 
                 Grid.Row="4" 
@@ -65,7 +64,7 @@
                 Background="#FFFF09A7" 
                 Foreground="White" 
                 BorderBrush="#FFFFA400" 
-                Margin="2,2,2,2" FontSize="36" Click="Button0_Click"/>
+                Margin="2,2,2,2" FontSize="36"/>
         <Button x:Name="Button5"
                 Grid.Column="1" 
                 Grid.Row="4" 
@@ -73,7 +72,7 @@
                 Background="#FFFF09A7" 
                 Foreground="White" 
                 BorderBrush="#FFFFA400" 
-                Margin="2,2,2,2" FontSize="36" Click="Button0_Click"/>
+                Margin="2,2,2,2" FontSize="36"/>
         <Button x:Name="Button6"
                 Grid.Column="2" 
                 Grid.Row="4" 
@@ -81,7 +80,7 @@
                 Background="#FFFF09A7" 
                 Foreground="White" 
                 BorderBrush="#FFFFA400" 
-                Margin="2,2,2,2" FontSize="36" Click="Button0_Click"/>
+                Margin="2,2,2,2" FontSize="36"/>
         <Button x:Name="Button7"
                 Grid.Column="0" 
                 Grid.Row="5" 
@@ -89,7 +88,7 @@
                 Background="#FFFF09A7" 
                 Foreground="White" 
                 BorderBrush="#FFFFA400" 
-                Margin="2,2,2,2" FontSize="36" Click="Button0_Click"/>
+                Margin="2,2,2,2" FontSize="36"/>
         <Button x:Name="Button8"
                 Grid.Column="1" 
                 Grid.Row="5" 
@@ -97,7 +96,7 @@
                 Background="#FFFF09A7" 
                 Foreground="White" 
                 BorderBrush="#FFFFA400" 
-                Margin="2,2,2,2" FontSize="36" Click="Button0_Click"/>
+                Margin="2,2,2,2" FontSize="36"/>
         <Button x:Name="Button9"
                 Grid.Column="2" 
                 Grid.Row="5" 
@@ -105,7 +104,7 @@
                 Background="#FFFF09A7" 
                 Foreground="White" 
                 BorderBrush="#FFFFA400" 
-                Margin="2,2,2,2" FontSize="36" Click="Button0_Click"/>
+                Margin="2,2,2,2" FontSize="36"/>
         <Button x:Name="Button0"
                 Grid.Column="1" 
                 Grid.Row="6" 
@@ -113,7 +112,7 @@
                 Background="#FFFF09A7" 
                 Foreground="White" 
                 BorderBrush="#FFFFA400" 
-                Margin="2,2,2,2" FontSize="36" Click="Button0_Click"/>
+                Margin="2,2,2,2" FontSize="36"/>
         <Button x:Name="ButtonDot"
                 Grid.Column="0" 
                 Grid.Row="6" 
